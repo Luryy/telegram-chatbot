@@ -6,9 +6,6 @@ var meta = 0
 
 module.exports = function()
 {
- 
-  // replace the value below with the Telegram token you receive from @BotFather
-  const token = '1133636994:AAGJGLttrcovXNohWZXo_NFKnjdkVjvx2mQ';
 
   const opt = {polling: true};
 
