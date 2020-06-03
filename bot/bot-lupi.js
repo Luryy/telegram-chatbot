@@ -42,7 +42,7 @@ module.exports = function(bot)
       }
   
 
-    if (resp.toString().toLowerCase().includes('qual' && 'melhor' && ('ej' || 'empresa'))) {
+    if (resp.toString().toLowerCase().includes('qual' && 'melhor' && ( 'ej' || 'empresa'))) {
       dataDao.busca('ej')
         .then(result => bot.sendMessage(chatId, `Claro que é a ${result.ej}`))
         .catch(erro => bot.sendMessage(chaId, erro))
@@ -53,6 +53,13 @@ module.exports = function(bot)
       bot.sendMessage(chatId, `Eu também te amo ${msg.from.first_name}`);
 
      }
+
+     if (resp.toString().toLowerCase().includes('fechamos projeto')) {
+      bot.sendMessage(chatId, `Essa é minha empresa!!!\nSó partir pra sarrada`);
+
+     }
+
+
 
 
     
