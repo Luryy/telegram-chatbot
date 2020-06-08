@@ -3,6 +3,7 @@ class Tables {
     init(conexao) {
         this._conexao = conexao
         this._createData();
+        this._createMember();
     }
 
     _createData(){
@@ -28,6 +29,24 @@ class Tables {
                 console.log(erro)
             } else {
                 console.log('Table data ok')
+            }
+        })
+    }
+
+    _createMember(){
+        const MEMBER_SCHEMA = 
+            `
+            CREATE TABLE IF NOT EXISTS member (
+                id INT NOT NULL, 
+                nome varchar(30) NOT NULL, 
+                PRIMARY KEY(id))
+            `;
+
+        this._conexao.query(MEMBER_SCHEMA, erro => {
+            if(erro) {
+                console.log(erro)
+            } else {
+                console.log('Table Member ok')
             }
         })
     }

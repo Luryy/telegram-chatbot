@@ -6,7 +6,6 @@ class DataDao {
 
     edita(dado, data) {
         return new Promise((resolve, reject) => {
-            console.log(data);
             this._db.query(`
                 UPDATE data SET
                 ${dado} = ?

@@ -11,7 +11,7 @@ module.exports = function(bot)
     // of the message
   
     const chatId = msg.chat.id;
-    const resp = match[1]; // the captured "whatever"
+    const resp = match[1]; 
 
     if (resp.toString().toLowerCase().includes('quanto' && ('faltando' || 'falta') && 'ac')) {
       dataDao.busca('meta, faturamento, projetos, metaproj')
@@ -48,19 +48,6 @@ module.exports = function(bot)
         .catch(erro => bot.sendMessage(chaId, erro))
 
      }
-
-     if (resp.toString().toLowerCase().includes('eu te amo')) {
-      bot.sendMessage(chatId, `Eu também te amo ${msg.from.first_name}`);
-
-     }
-
-     if (resp.toString().toLowerCase().includes('fechamos projeto')) {
-      bot.sendMessage(chatId, `Essa é minha empresa!!!\nSó partir pra sarrada`);
-
-     }
-
-
-
 
     
   });

@@ -29,6 +29,16 @@ module.exports = function(bot)
             bot.sendMessage(chatId, `Primeiramente, converse com Adm-fin para tirar todas as dúvidas em relação a planilha, além de já ter feito um bom estudo de viabilidade com a galera de projetos e de ter colhido o máximo de informações com Negócios caso o lead tenha vindo através da redes sociais ou site.\nOutra dica top, é conversar com quem já executou bastante projeto igual ao que você está precificando. Boa precificação e negociação, esse lead já deixou de ser lead desde o momento em que conversou com você. Agora ele já é cliente!`);
         }
 
+        if (resp.toString().toLowerCase().includes('eu te amo')) {
+            bot.sendMessage(chatId, `Eu também te amo ${msg.from.first_name}`);
+      
+           }
+      
+        if (resp.toString().toLowerCase().includes('fechamos projeto')) {
+         bot.sendMessage(chatId, `Essa é minha empresa!!!\nSó partir pra sarrada`);
+    
+        }
+
     
       }); 
 }

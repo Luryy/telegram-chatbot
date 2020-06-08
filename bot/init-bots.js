@@ -8,6 +8,7 @@ const bots = {
     lupi: require('./bot-lupi.js'),
     config: require('./bot-config.js'),
     geral: require('./bot-geral.js'),
+    lupiMail: require('./bot-lupiMail.js'),
   
   }
   
@@ -18,6 +19,7 @@ const bots = {
     bots.lupi(bot);
     bots.config(bot);
     bots.geral(bot);
+    bots.lupiMail(bot);
   
   }
   
