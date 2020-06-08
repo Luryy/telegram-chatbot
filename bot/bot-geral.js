@@ -14,7 +14,7 @@ module.exports = function(bot)
            }
 
         if (resp.toString().toLowerCase().includes('saudades')) {
-            bot.sendMessage(chatId, `Também estou morrendo de saudade ${msg.from.first_name}, mas por enquanto só podemos nós falar por aqui`);
+            bot.sendMessage(chatId, `Também estou morrendo de saudade ${msg.from.first_name}, mas por enquanto só podemos nos falar por aqui`);
            }
 
         if (resp.toString().toLowerCase().includes('vamos' && 'fazer' && 'chamada' && ( 'vídeo' || 'video'))) {
@@ -26,8 +26,7 @@ module.exports = function(bot)
         }
 
         if (resp.toString().toLowerCase().includes('como faço para fazer uma boa precificação')) {
-            bot.sendMessage(chatId, `Primeiramente, converse com Adm-fin para tirar todas as dúvidas em relação a planilha, além de já ter feito um bom estudo de viabilidade com a galera de projetos e de ter colhido o máximo de informações com Negócios caso o lead tenha vindo através da redes sociais ou site.\n  
-            Outra dica top, é conversar com quem já executou bastante projeto igual ao que você está precificando. Boa precificação e negociação, esse lead já deixou de ser lead desde o momento em que conversou com você. Agora ele já é cliente!`);
+            bot.sendMessage(chatId, `Primeiramente, converse com Adm-fin para tirar todas as dúvidas em relação a planilha, além de já ter feito um bom estudo de viabilidade com a galera de projetos e de ter colhido o máximo de informações com Negócios caso o lead tenha vindo através da redes sociais ou site.\nOutra dica top, é conversar com quem já executou bastante projeto igual ao que você está precificando. Boa precificação e negociação, esse lead já deixou de ser lead desde o momento em que conversou com você. Agora ele já é cliente!`);
         }
 
     
