@@ -27,7 +27,7 @@ module.exports = function(bot)
   
         }
 
-    if (resp.toString().toLowerCase().includes('qual' && 'faturamento')) {
+    if (resp.toString().toLowerCase().includes('qual o nosso faturamento')) {
       dataDao.busca('faturamento')
         .then(result => bot.sendMessage(chatId, `Nosso faturamento é ${(result.faturamento/1000).toFixed(3)}k \n#Foco #200K90P`))
         .catch(erro => bot.sendMessage(chaId, erro))
@@ -49,7 +49,7 @@ module.exports = function(bot)
 
      }
 
-     if (resp.toString().toLowerCase().includes('Lupi, ontem cedo passamos um valor errado a cerca do nosso farol verde de faturamento! Você pode atualizar?')) {
+     if (resp.toString().toLowerCase().includes('ontem cedo passamos um valor errado a cerca do nosso farol verde de faturamento! você pode atualizar?')) {
       bot.sendMessage(chatId, `Oi, ${msg.from.first_name}. Claro que sim! Temos R$ 53.770,30 atualmente de faturamento e R$ 11.520,00 para bater a meta do mês proposta entre todos nós na AG.\n\n Maaas... atenção. Para estarmos no farol verde é necessário fecharmos o mês com 70k, afinal, 120k divido por 12 meses é igual a 10k por mês e, por sua vez, 10k x 7 meses é igual a 70k. Ficou claro?\n\nFoca no nosso crescimento gradativo que é sucesso! Mais tarde trago novidades sobre as nossa estratégias!`);
 
      }
