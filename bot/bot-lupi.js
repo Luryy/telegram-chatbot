@@ -15,7 +15,7 @@ module.exports = function(bot)
 
     if (resp.toString().toLowerCase().includes('quanto' && ('faltando' || 'falta') && 'ac')) {
       dataDao.busca('meta, faturamento, projetos, metaproj')
-        .then(result => bot.sendMessage(chatId, `Faltam ${((result.meta - result.faturamento)/1000).toFixed(3)}k e ${(result.metaproj - result.projetos)}P\n#Foco #200K90P`))
+        .then(result => bot.sendMessage(chatId, `Faltam ${((result.meta - result.faturamento)/1000).toFixed(3)}k e ${(result.metaproj - result.projetos)}P\n#Foco #120K75P`))
         .catch(erro => bot.sendMessage(chaId, erro))
 
       }
@@ -29,14 +29,14 @@ module.exports = function(bot)
 
     if (resp.toString().toLowerCase().includes('qual o nosso faturamento')) {
       dataDao.busca('faturamento')
-        .then(result => bot.sendMessage(chatId, `Nosso faturamento é ${(result.faturamento/1000).toFixed(3)}k \n#Foco #200K90P`))
+        .then(result => bot.sendMessage(chatId, `Nosso faturamento é ${(result.faturamento/1000).toFixed(3)}k \n#Foco #120K75P`))
         .catch(erro => bot.sendMessage(chaId, erro))
 
       }
 
     if (resp.toString().toLowerCase().includes('quantos' && 'projetos')) {
       dataDao.busca('projetos')
-        .then(result => bot.sendMessage(chatId, `Já fechamos ${result.projetos}P \n#Foco #200K90P`))
+        .then(result => bot.sendMessage(chatId, `Já fechamos ${result.projetos}P \n#Foco #120K75P`))
         .catch(erro => bot.sendMessage(chaId, erro))
   
       }
