@@ -49,6 +49,16 @@ module.exports = function(bot)
 
      }
 
+     if (resp.toString().toLowerCase().includes('Lupi, ontem cedo passamos um valor errado a cerca do nosso farol verde de faturamento! Você pode atualizar?')) {
+      bot.sendMessage(chatId, `Oi, ${msg.from.first_name}. Claro que sim! Temos R$ 53.770,30 atualmente de faturamento e R$ 11.520,00 para bater a meta do mês proposta entre todos nós na AG.\n\n Maaas... atenção. Para estarmos no farol verde é necessário fecharmos o mês com 70k, afinal, 120k divido por 12 meses é igual a 10k por mês e, por sua vez, 10k x 7 meses é igual a 70k. Ficou claro?\n\nFoca no nosso crescimento gradativo que é sucesso! Mais tarde trago novidades sobre as nossa estratégias!`);
+
+     }
+
+     if (resp.toString().toLowerCase().includes('faz uma lista dos membros')) {
+      bot.sendMessage(chatId, "- Ariely\n- Arthur \n- Beatriz \n- Breno\n- Damião \n- Danyelle \n- Débora \n- Geovani \n- Henrique \n- Larissa\n- Leonardo \n- Letícia A \n- Letícia B.\n- Luanna\n- Lucas Jeremias\n- Lucas Yuri\n- Marcus Antônio\n- Marcus Cezar \n- Maria Kyara\n- Marinethe \n- Mateus \n- Maylla\n- Mylena\n- Natália B.\n- Nathália R.\n- Nívea\n- Pâmala \n- Paula\n- Rafaela A.\n- Rafaela M.\n- Rodrigo \n- Samara \n- Sérgio \n- Stephani \n- Wydem\n- Yuri\n")
+
+     }
+
     
   });
 
